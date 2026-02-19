@@ -205,3 +205,22 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Bỏ qua môi trường ảo
+venv/
+env/
+__pycache__/
+
+# Bỏ qua dữ liệu video nặng
+data/input/*
+data/output/*
+!data/input/.gitkeep
+!data/output/.gitkeep
+
+# Bỏ qua các file Model weights (rất nặng)
+models/*.pt
+models/*.onnx
+
+# Các file hệ thống khác
+.DS_Store
+*.log
